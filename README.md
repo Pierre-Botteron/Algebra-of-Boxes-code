@@ -23,9 +23,10 @@ The repository is structured as follows. We only describe the most important fil
 | File name | Description | Link with the manuscript |
 | :------------ |:---------------| :-----|
 | `Draw-new-collapsing-boxes.ipynb` | Drawing new collapsing boxes using Algorithm 4. | Figure 10 |
-| `Draw-Orbit.ipynb` | Drawing the Orbit of a box P in some slices | Figures 7 and 8, Appendix A |
+| `Draw-Orbit.ipynb` | Drawing the Orbit of a box P in some slices. | Figures 7 and 8, Appendix A |
 | `Multiplication-Table.ipynb` | Computing the multiplication table given some boxes and a wiring. | Figure 4, Eq. (18), Appendix C |
-| `Histograms.ipynb` | Drawing the histograms of the ouputs of Algorithms 2 and 3 | Figure 9 |
+| `Histograms.ipynb` | Drawing the histograms of the ouputs of Algorithms 2 and 3. | Figure 9 |
+| `Coordinates_extremal_NS_boxes.ipynb` | Drawing the 24 extremal boxes of $\mathcal{N\!S}$ in terms of $2$ games. | Figures 11 and 8 |
 
 ## Installation of the Package
 
