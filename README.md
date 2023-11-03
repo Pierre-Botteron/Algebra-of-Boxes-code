@@ -7,14 +7,13 @@ This is the GitHub page associated to the manuscript "`Algebra of Nonlocal Boxes
 
 The repository is structured as follows. We only describe the most important files for a new user.
 
-```bash
+```
 ./
-
-|-- nonlocal-boxes/: Core of package. 
+|__ nonlocal-boxes/: Core of package. 
 |  |-- `__init__.py`: Init file.
 |  |-- `evaluate.py`: Package of the function to evaluate, using PyTorch.
 |  |-- `utils.py`: Package of the constants, using PyTorch.
-|-- ipynb/: Contains Python notebooks which demonstrate how the code works.
+|__ ipynb/: Contains Python notebooks which demonstrate how the code works.
 |-- `README.md`: This file.
 
 ```
