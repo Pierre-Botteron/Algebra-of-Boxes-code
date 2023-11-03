@@ -1,5 +1,7 @@
 # Algebra-of-Boxes-code
-This is the GitHub page associated to the manuscript "`Algebra of Nonlocal Boxes and Collapse of Communication Complexity`" from Pierre Botteron, Anne Broadbent, Réda Chhaibi, Ion Nechita, and Clément Pellegrini.
+
+## Associated Manuscript
+This is the GitHub page associated to the manuscript "`Algebra of Nonlocal Boxes and Collapse of Communication Complexity`" from [Pierre Botteron](https://pierre-botteron.github.io/), [Anne Broadbent](https://mysite.science.uottawa.ca/abroadbe/), [Réda Chhaibi](https://www.math.univ-toulouse.fr/~rchhaibi/), [Ion Nechita](https://ion.nechita.net/about/), and [Clément Pellegrini](https://www.math.univ-toulouse.fr/~pellegri/).
 
 ## Content
 
@@ -16,13 +18,14 @@ The repository is structured as follows. We only describe the most important fil
 |-- `README.md`: This file.
 
 ```
-#### Details of the Python notebooks:
+#### Details of the Python notebooks (folder `ipynb/`):
 
 | File name | Description | Link with the manuscript |
-| :------------ |:---------------:| -----:|
+| :------------ |:---------------| :-----|
 | `Draw-new-collapsing-boxes.ipynb` | Drawing new collapsing boxes using Algorithm 4. | Figure 10 |
 | `Draw-Orbit.ipynb` | Drawing the Orbit of a box P in some slices | Figures 7 and 8, Appendix A |
-| `Multiplication-Table.ipynb` | Computing the multiplication table given some boxes and a wiring. | Figure 4, Eq (18), Appendix C |
+| `Multiplication-Table.ipynb` | Computing the multiplication table given some boxes and a wiring. | Figure 4, Eq. (18), Appendix C |
+| `Histograms.ipynb` | Drawing the histograms of the ouputs of Algorithms 2 and 3 | Figure 9 |
 
 ## Installation of the Package
 
