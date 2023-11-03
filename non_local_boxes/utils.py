@@ -150,7 +150,8 @@ def random_wiring(n):  # n is the number of columns
 def random_extremal_wiring(n):  # n is the number of columns
     return torch.randint(2, (32,n))
 
-def wiring_to_functions(W):  # BE CAREFUL!! Here W is a list (with 32 entries)
+def print_functions_from_wiring(W):  
+    # BE CAREFUL!! Here W is a list (with 32 entries), or a 32x1 tensor
     # f1
     string0 = "f_1(x,a2) = "
     string = string0
@@ -376,6 +377,95 @@ def wiring_to_functions(W):  # BE CAREFUL!! Here W is a list (with 32 entries)
 
 def projection_to_extremal_wiring(W): # W is a torch.tensor
     return torch.round(W)
+
+
+#
+#  Function to project a wiring W in the feasible set \mathcal{W}
+#
+
+M1 = torch.zeros(32, 32)
+for i in range(32):
+    M1[i,i]=1
+M1[0,0]=0.5
+M1[0,1]=0.5
+M1[1,0]=0.5
+M1[1,1]=0.5
+
+M2 = torch.zeros(32, 32)
+for i in range(32):
+    M2[i,i]=1
+M2[8,8]=0.5
+M2[8,9]=0.5
+M2[9,8]=0.5
+M2[9,9]=0.5
+
+M3 = torch.zeros(32, 32)
+for i in range(32):
+    M3[i,i]=1
+M3[2,2]=0.5
+M3[2,3]=0.5
+M3[3,2]=0.5
+M3[3,3]=0.5
+
+M4 = torch.zeros(32, 32)
+for i in range(32):
+    M4[i,i]=1
+M4[10,10]=0.5
+M4[10,11]=0.5
+M4[11,10]=0.5
+M4[11,11]=0.5
+
+M5 = torch.zeros(32, 32)
+for i in range(32):
+    M5[i,i]=1
+M5[4,4]=0.5
+M5[4,5]=0.5
+M5[5,4]=0.5
+M5[5,5]=0.5
+
+M6 = torch.zeros(32, 32)
+for i in range(32):
+    M6[i,i]=1
+M6[12,12]=0.5
+M6[12,13]=0.5
+M6[13,12]=0.5
+M6[13,13]=0.5
+
+M7 = torch.zeros(32, 32)
+for i in range(32):
+    M7[i,i]=1
+M7[6,6]=0.5
+M7[6,7]=0.5
+M7[7,6]=0.5
+M7[7,7]=0.5
+
+M8 = torch.zeros(32, 32)
+for i in range(32):
+    M8[i,i]=1
+M8[14,14]=0.5
+M8[14,15]=0.5
+M8[15,14]=0.5
+M8[15,15]=0.5
+
+def projected_wiring(W):  # W is a 32xn tensor
+    W = torch.maximum(W, torch.zeros_like(W))  # it outputs the element-wise maximum
+    W = torch.minimum(W, torch.ones_like(W))   # similarly for minimum
+
+    T1 = (torch.abs(W[0,:]-W[1,:]) <= torch.abs(W[8, :] - W[9, :]))
+    W = T1*torch.tensordot(M1, W, dims=1) + torch.logical_not(T1)*torch.tensordot(M2, W, dims=1)
+    
+    T2 = (torch.abs(W[2,:]-W[3,:]) <= torch.abs(W[10, :] - W[11, :]))
+    W = T2*torch.tensordot(M3, W, dims=1) + torch.logical_not(T2)*torch.tensordot(M4, W, dims=1)
+
+    T3 = (torch.abs(W[4,:]-W[5,:]) <= torch.abs(W[12, :] - W[13, :]))
+    W = T3*torch.tensordot(M5, W, dims=1) + torch.logical_not(T3)*torch.tensordot(M6, W, dims=1)
+
+    T4 = (torch.abs(W[6,:]-W[7,:]) <= torch.abs(W[14, :] - W[15, :]))
+    W = T4*torch.tensordot(M7, W, dims=1) + torch.logical_not(T4)*torch.tensordot(M8, W, dims=1)
+
+    return W
+
+
 
 
 
@@ -663,3 +753,5 @@ known_collapsing_W = [
     [0., 0., 1., 1., 1., 1., 0., 0., 0., 0., 1., 0., 1., 0., 0., 1., 0., 1.,
         1., 0., 1., 0., 0., 1., 0., 1., 1., 0., 0., 1., 1., 0.]
 ]
+
+
