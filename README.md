@@ -27,6 +27,7 @@ The repository is structured as follows. We only describe the most important fil
 | `Multiplication-Table.ipynb` | Computing the multiplication table given some boxes and a wiring. | Figure 4, Eq. (18), Appendix C |
 | `Histograms.ipynb` | Drawing the histograms of the ouputs of Algorithms 2 and 3. | Figure 9 |
 | `Coordinates_extremal_NS_boxes.ipynb` | Drawing the 24 extremal boxes of $\mathcal{N\!S}$ in terms of $2$ games. | Figures 11 and 8 |
+| `Test_if_W_is_collapsing.ipynb` | Given a wiring W and an triangle of boxes, test if it collapses the triangle | Proof of Thm. 41 |
 
 ## Installation of the Package
 
