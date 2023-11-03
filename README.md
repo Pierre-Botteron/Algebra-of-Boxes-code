@@ -1,5 +1,5 @@
 # Algebra-of-Boxes-code
-This is the GitHub page associated to the manuscript "Algebra of Nonlocal Boxes and Collapse of Communication Complexity" from Pierre Botteron, Anne Broadbent, Réda Chhaibi, Ion Nechita, and Clément Pellegrini.
+This is the GitHub page associated to the manuscript "`Algebra of Nonlocal Boxes and Collapse of Communication Complexity`" from Pierre Botteron, Anne Broadbent, Réda Chhaibi, Ion Nechita, and Clément Pellegrini.
 
 ## Content
 
@@ -12,16 +12,19 @@ The repository is structured as follows. We only describe the most important fil
 |  |-- `__init__.py`: Init file.
 |  |-- `evaluate.py`: Package of the function to evaluate, using PyTorch.
 |  |-- `utils.py`: Package of the constants, using PyTorch.
-
 |-- ipynb/: Contains Python notebooks which demonstrate how the code works.
-|  |-- `Draw-new-collapsing-boxes.ipynb`: Drawing the new collapsing found using Algorithm 4, see Figure 10.
-|  |-- `Draw-Orbit.ipynb`: Drawing the Orbit of a box P in different slices.
-
 |-- `README.md`: This file.
 
 ```
+#### Details of the Python notebooks:
 
-## Installation
+| File name | Description | Link with the manuscript |
+| :------------ |:---------------:| -----:|
+| `Draw-new-collapsing-boxes.ipynb` | Drawing new collapsing boxes using Algorithm 4. | Figure 10 |
+| `Draw-Orbit.ipynb` | Drawing the Orbit of a box P in some slices | Figures 7 and 8, Appendix A |
+| `Multiplication-Table.ipynb` | Computing the multiplication table given some boxes and a wiring. | Figure 4, Eq (18), Appendix C |
+
+## Installation of the Package
 
 1. Create new virtual environment `.venv_boxes`:
 
@@ -66,6 +69,7 @@ $ python -m ipykernel install --user --name=.venv_boxes
 There is a variable `nb_columns` in `non_local_boxes/evaluate.py` that can be set depending on the algo that is running: 
 - for optimisation codes, set it to a large number, e.g. 1000; 
 - for evaluation codes, set it to 1.
+The bigger that number is, the more precise is the optimisation but the longer is the run time.
 
 ## Credits
 Later.
