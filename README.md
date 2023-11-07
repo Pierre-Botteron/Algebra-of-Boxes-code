@@ -31,7 +31,7 @@ This GitHub page is associated to the following manuscript
 | `Draw-Orbit.ipynb` | Drawing the Orbit of a box $\mathtt{P}$ in some slices. | Figures&nbsp;7 and&nbsp;8, Appendix&nbsp;A |
 | `Multiplication-Table.ipynb` | Computing the multiplication table given some boxes and a wiring. | Figure&nbsp;4, Eq.&nbsp;(18), Appendix&nbsp;C |
 | `Histograms.ipynb` | Drawing the histograms of the ouputs of Algorithms&nbsp;2 and&nbsp;3. | Figure&nbsp;9 |
-| `Coordinates_extremal_NS_boxes.ipynb` | Drawing the 24 extremal boxes of $\mathcal{N\!S}$ in terms of $2$ games. | Figures&nbsp;11 and&nbsp;8 |
+| `Coordinates_extremal_NS_boxes.ipynb` | Drawing the 24 extremal boxes of $\mathcal{NS}$ in terms of $2$ games. | Figures&nbsp;11 and&nbsp;8 |
 | `Test_if_W_is_collapsing.ipynb` | Given a wiring $\mathsf{W}$ and a triangle of boxes, test if the wiring collapses the triangle. | Proof of Thm.&nbsp;41 |
 
 ## Installation of the Package
