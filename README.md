@@ -1,11 +1,12 @@
 # Algebra-of-Boxes-code
 
 ## Associated Manuscript
-This is the GitHub page associated to the manuscript "`Algebra of Nonlocal Boxes and Collapse of Communication Complexity`" from [Pierre Botteron](https://pierre-botteron.github.io/), [Anne Broadbent](https://mysite.science.uottawa.ca/abroadbe/), [Réda Chhaibi](https://www.math.univ-toulouse.fr/~rchhaibi/), [Ion Nechita](https://ion.nechita.net/about/), and [Clément Pellegrini](https://www.math.univ-toulouse.fr/~pellegri/).
+This GitHub page is associated to the following manuscript 
+- <b>Title:</b> &#128195; `Algebra of Nonlocal Boxes and Collapse of Communication Complexity`
+- <b>Authors:</b> [&#128100; Pierre Botteron](https://pierre-botteron.github.io/), [&#128100; Anne Broadbent](https://mysite.science.uottawa.ca/abroadbe/), [&#128100; Réda Chhaibi](https://www.math.univ-toulouse.fr/~rchhaibi/), [&#128100; Ion Nechita](https://ion.nechita.net/about/), and [&#128100; Clément Pellegrini](https://www.math.univ-toulouse.fr/~pellegri/).
 
 ## Content
 
-The repository is structured as follows. We only describe the most important files for a new user.
 
 ```
 ./
@@ -13,9 +14,9 @@ The repository is structured as follows. We only describe the most important fil
 |  |-- `__init__.py`: Init file.
 |  |-- `evaluate.py`: Package of the function to evaluate, using PyTorch.
 |  |-- `utils.py`: Package of the constants, using PyTorch.
+|  |-- `Vectorization-of-the-code.pdf`: Explanations of the vectorization.
 |__ ipynb/: Contains Python notebooks which demonstrate how the code works.
 |-- `README.md`: This file.
-
 ```
 #### Details of the Python notebooks (folder `ipynb/`):
 

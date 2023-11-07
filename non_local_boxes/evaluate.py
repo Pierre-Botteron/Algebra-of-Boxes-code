@@ -1,4 +1,3 @@
-#import numpy as np
 import torch
 import non_local_boxes.utils
 
@@ -6,6 +5,9 @@ import non_local_boxes.utils
 nb_columns = int(1e0)
 
 
+#
+# See the attached PDF for explanations of the code.
+#
 
 
 
@@ -75,11 +77,9 @@ for y in range(2):
 
 def A(W):    # W is a 32xn matrix
     T1 = torch.tensordot(A1, W, dims=1) + A2
-    #T2 = torch.reshape(torch.kron(torch.ones((2)), T1), (2,2,4,4,-1))
     T2 = T1.repeat(2, 1, 1, 1, 1)
     T3 = torch.transpose(T2, 0, 1)
     S1 = torch.tensordot(A3, W, dims=1) + A4
-    #S2 = torch.reshape(torch.kron(torch.ones((2)), S1), (2,2,4,4,-1))
     S2 = S1.repeat(2, 1, 1, 1, 1)
     R = torch.transpose(T3 * S2, 4, 2)
     return torch.transpose(R, 4, 3)
@@ -141,11 +141,9 @@ B4 = A4
 
 def B(W):    # W is a 32xn matrix
     T1 = torch.tensordot(B1, W, dims=1) + B2
-    #T2 = torch.reshape(torch.kron(torch.ones((2)), T1), (2,2,4,4,-1))
     T2 = T1.repeat(2, 1, 1, 1, 1)
     T3 = torch.transpose(T2, 0, 1)
     S1 = torch.tensordot(B3, W, dims=1) + B4
-    #S2 = torch.reshape(torch.kron(torch.ones((2)), S1), (2,2,4,4,-1))
     S2 = S1.repeat(2, 1, 1, 1, 1)
     R = torch.transpose(T3 * S2, 4, 2)
     return torch.transpose(R, 4, 3)
@@ -198,7 +196,6 @@ for x in range(2):
 
 def C(W):    # W is a 32xn matrix
     T1 = torch.tensordot(C1, W, dims=1) + C2
-    # T2 = torch.reshape(torch.kron( torch.ones((2,2)), T1), (2,2,2,2,4,4,-1))
     T2 = T1.repeat(2, 2, 1, 1, 1, 1, 1)
     R = torch.transpose(T2, 0, 1)
     R = torch.transpose(R, 0, 3)
@@ -253,7 +250,6 @@ for y in range(2):
 
 def D(W):    # W is a 32xn matrix
     T1 = torch.tensordot(D1, W, dims=1) + D2
-    # T2 = torch.reshape(torch.kron( torch.ones((2,2)), T1), (2,2,2,2,4,4,-1))
     T2 = T1.repeat(2, 2, 1, 1, 1, 1, 1)
     R = torch.transpose(T2, 1, 2)
     R = torch.transpose(R, 6, 4)
@@ -272,12 +268,9 @@ def D(W):    # W is a 32xn matrix
 def R(W, P, Q):     # W is a 32xn matrix, P and Q are 4x4 matrices
     T1 = torch.tensordot(A(W), P, dims=1)  # green term
     T2 = torch.transpose(torch.tensordot(B(W), Q, dims=1), 4, 3)  # blue term
-    #T3 = torch.reshape(torch.kron(torch.ones((2,2)), T1*T2), (2,2,2,2,-1,4,4))
     T3 = (T1*T2).repeat(2,2,1,1,1,1,1)
     T4 = T3 * C(W) * D(W)  # the big bracket
     return torch.tensordot(T4, torch.ones((4, 4)), dims=2)
-    #T5 = torch.tensordot(T4, torch.ones((4)), dims=1)
-    #return torch.tensordot(T5, torch.ones((4)), dims=1)
     # the output is a 2x2x2x2xn tensor
 
 def R_tensor(W, P, Q):     # W is a 32xn matrix, P and Q are 2x2x2x2 tensors
@@ -285,12 +278,9 @@ def R_tensor(W, P, Q):     # W is a 32xn matrix, P and Q are 2x2x2x2 tensors
     Q = non_local_boxes.utils.tensor_to_matrix(Q)
     T1 = torch.tensordot(A(W), P, dims=1)  # green term
     T2 = torch.transpose(torch.tensordot(B(W), Q, dims=1), 4, 3)  # blue term
-    #T3 = torch.reshape(torch.kron(torch.ones((2,2)), T1*T2), (2,2,2,2,-1,4,4))
     T3 = (T1*T2).repeat(2,2,1,1,1,1,1)
     T4 = T3 * C(W) * D(W)  # the big bracket
     return torch.tensordot(T4, torch.ones((4, 4)), dims=2)
-    #T5 = torch.tensordot(T4, torch.ones((4)), dims=1)
-    #return torch.tensordot(T5, torch.ones((4)), dims=1)
     # the output is a 2x2x2x2xn tensor
 
 
@@ -329,25 +319,6 @@ def phi_power(W, P, N):
     # W is a 32xn matrix
     # P is a box: a 4x4 matrix
     # N is the power of P
-
-    # # # Q1=torch.clone(P)
-    # # # Q1=non_local_boxes.utils.matrix_to_tensor(Q1)  
-    # # # # Q1 is a 2x2x2x2 tensor
-    
-    # # # Q2 = R(W, non_local_boxes.utils.tensor_to_matrix(Q1), P)
-    # # # # Q2 is a 2x2x2x2xn tensor
-
-    # # # Q3 = torch.zeros(2, 2, 2, 2, nb_columns)
-    # # # for alpha in range(nb_columns):
-    # # #     Q3[:,:,:,:,alpha] = R(W, non_local_boxes.utils.tensor_to_matrix(Q2[:,:,:,:,alpha]), P)[:,:,:,:,alpha]
-
-    # Q = torch.clone(P)
-    # Q = non_local_boxes.utils.matrix_to_tensor(Q) # Q is a 2x2x2x2 tensor
-    # Q = R(W, P, P) 
-    # for k in range(N-2):
-    #     for alpha in range(nb_columns):
-    #         Q[:,:,:,:,alpha] = R(W, non_local_boxes.utils.tensor_to_matrix(Q[:,:,:,:,alpha]), P)[:,:,:,:,alpha]
-    # return h_flat( Q )
 
     Q = torch.zeros(N+1,2,2,2,2,nb_columns)
     Q[2,:,:,:,:,:] = R(W, P, P) 
