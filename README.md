@@ -3,7 +3,12 @@
 ## Associated Manuscript
 This GitHub page is associated to the following manuscript 
 - <b>Title:</b> &#128195; `Algebra of Nonlocal Boxes and Collapse of Communication Complexity`
-- <b>Authors:</b> [&#128100; Pierre Botteron](https://pierre-botteron.github.io/), [&#128100; Anne Broadbent](https://mysite.science.uottawa.ca/abroadbe/), [&#128100; Réda Chhaibi](https://www.math.univ-toulouse.fr/~rchhaibi/), [&#128100; Ion Nechita](https://ion.nechita.net/about/), and [&#128100; Clément Pellegrini](https://www.math.univ-toulouse.fr/~pellegri/).
+- <b>Authors:</b> 
+[&#128100; Pierre Botteron](https://pierre-botteron.github.io/), 
+[&#128100; Anne Broadbent](https://mysite.science.uottawa.ca/abroadbe/), 
+[&#128100; Réda Chhaibi](https://www.math.univ-toulouse.fr/~rchhaibi/), 
+[&#128100; Ion Nechita](https://ion.nechita.net/about/), and 
+[&#128100; Clément Pellegrini](https://www.math.univ-toulouse.fr/~pellegri/).
 
 ## Content
 
@@ -22,12 +27,12 @@ This GitHub page is associated to the following manuscript
 
 | File name | Description | Link with the manuscript |
 | :------------ |:---------------| :-----|
-| `Draw-new-collapsing-boxes.ipynb` | Drawing new collapsing boxes using Algorithm 4. | Figure 10 |
-| `Draw-Orbit.ipynb` | Drawing the Orbit of a box P in some slices. | Figures 7 and 8, Appendix A |
-| `Multiplication-Table.ipynb` | Computing the multiplication table given some boxes and a wiring. | Figure 4, Eq. (18), Appendix C |
-| `Histograms.ipynb` | Drawing the histograms of the ouputs of Algorithms 2 and 3. | Figure 9 |
-| `Coordinates_extremal_NS_boxes.ipynb` | Drawing the 24 extremal boxes of $\mathcal{N\!S}$ in terms of $2$ games. | Figures 11 and 8 |
-| `Test_if_W_is_collapsing.ipynb` | Given a wiring W and an triangle of boxes, test if it collapses the triangle | Proof of Thm. 41 |
+| `Draw-new-collapsing-boxes.ipynb` | Drawing new collapsing boxes using Algorithm&nbsp;4. | Figure&nbsp;10 |
+| `Draw-Orbit.ipynb` | Drawing the Orbit of a box $\mathtt{P}$ in some slices. | Figures&nbsp;7 and&nbsp;8, Appendix&nbsp;A |
+| `Multiplication-Table.ipynb` | Computing the multiplication table given some boxes and a wiring. | Figure&nbsp;4, Eq.&nbsp;(18), Appendix&nbsp;C |
+| `Histograms.ipynb` | Drawing the histograms of the ouputs of Algorithms&nbsp;2 and&nbsp;3. | Figure&nbsp;9 |
+| `Coordinates_extremal_NS_boxes.ipynb` | Drawing the 24 extremal boxes of $\mathcal{N\!S}$ in terms of $2$ games. | Figures&nbsp;11 and&nbsp;8 |
+| `Test_if_W_is_collapsing.ipynb` | Given a wiring $\mathsf{W}$ and a triangle of boxes, test if the wiring collapses the triangle. | Proof of Thm.&nbsp;41 |
 
 ## Installation of the Package
 
