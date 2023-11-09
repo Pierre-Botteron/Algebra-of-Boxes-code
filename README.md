@@ -6,7 +6,7 @@ This GitHub page is associated to the following manuscript
 - <b>Authors:</b> 
 [&#128100; Pierre Botteron](https://pierre-botteron.github.io/), 
 [&#128100; Anne Broadbent](https://mysite.science.uottawa.ca/abroadbe/), 
-[&#128100; Réda Chhaibi](https://www.math.univ-toulouse.fr/~rchhaibi/), 
+[&#128100; Reda Chhaibi](https://www.math.univ-toulouse.fr/~rchhaibi/), 
 [&#128100; Ion Nechita](https://ion.nechita.net/about/), and 
 [&#128100; Clément Pellegrini](https://www.math.univ-toulouse.fr/~pellegri/).
 
