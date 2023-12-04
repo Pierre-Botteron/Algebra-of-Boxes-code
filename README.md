@@ -2,7 +2,7 @@
 
 ## Associated Manuscript
 This GitHub page is associated to the following manuscript 
-- <b>Title:</b> [&#128195; Algebra of Nonlocal Boxes and Collapse of Communication Complexity](https://arxiv.org/abs/2312.00725)
+- <b>Manuscript:</b> [&#128195; Algebra of Nonlocal Boxes and Collapse of Communication Complexity](https://arxiv.org/abs/2312.00725)
 - <b>Authors:</b> 
 [&#128100; Pierre Botteron](https://pierre-botteron.github.io/), 
 [&#128100; Anne Broadbent](https://mysite.science.uottawa.ca/abroadbe/), 
