@@ -118,7 +118,7 @@ ENV/
 dmypy.json
 
 #Images
-*.png
+#*.png
 
 #Datasets
 data/*

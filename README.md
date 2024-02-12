@@ -27,12 +27,12 @@ This GitHub page is associated to the following manuscript
 
 | File name | Description | Link with the manuscript |
 | :------------ |:---------------| :-----|
-| `Draw-new-collapsing-boxes.ipynb` | Drawing new collapsing boxes using Algorithm&nbsp;4. | Figure&nbsp;10 |
-| `Draw-Orbit.ipynb` | Drawing the Orbit of a box $\mathtt{P}$ in some slices. | Figures&nbsp;7 and&nbsp;8, Appendix&nbsp;A |
-| `Multiplication-Table.ipynb` | Computing the multiplication table given some boxes and a wiring. | Figure&nbsp;4, Eq.&nbsp;(18), Appendix&nbsp;C |
-| `Histograms.ipynb` | Drawing the histograms of the ouputs of Algorithms&nbsp;2 and&nbsp;3. | Figure&nbsp;9 |
-| `Coordinates_extremal_NS_boxes.ipynb` | Drawing the 24 extremal boxes of $\mathcal{NS}$ in terms of $2$ games. | Figures&nbsp;11 and&nbsp;8 |
-| `Test_if_W_is_collapsing.ipynb` | Given a wiring $\mathsf{W}$ and a triangle of boxes, test if the wiring collapses the triangle. | Proof of Thm.&nbsp;41 |
+| `Coordinates_extremal_NS_boxes.ipynb` | Drawing the 24 extremal boxes of $\mathcal{NS}$ in terms of $2$ games. ![24 extremal points of NS](Images/24-extremal-points-of-NS.png) | Figures&nbsp;11 and&nbsp;8 |
+| `Draw-new-collapsing-boxes.ipynb` | Drawing new collapsing boxes using Algorithm&nbsp;4. ![Collapsing area from Algo 4](Images/Collapsing-area-from-Algo-4.png) | Figure&nbsp;10 |
+| `Draw-Orbit.ipynb` | Drawing the Orbit of a box $\mathtt{P}$ in some slices. ![Orbit BS09](Images/Orbit-BS09.png) | Figures&nbsp;7 and&nbsp;8, Appendix&nbsp;A |
+| `Histograms.ipynb` | Drawing the histograms of the ouputs of Algorithms&nbsp;2 and&nbsp;3. ![Histogram](Images/Histogram.png) | Figure&nbsp;9 |
+| `Multiplication-Table.ipynb` | Computing the multiplication table given some boxes and a wiring. ![Multiplication table](Images/Multiplication-table.png) | Figure&nbsp;4, Eq.&nbsp;(18), Appendix&nbsp;C |
+| `Test_if_W_is_collapsing.ipynb` | Given a wiring $\mathsf{W}$ and a triangle of boxes, test if the wiring collapses the triangle. ![Test if a wiring is collapsing](Images/Test-if-a-wiring-is-collapsing.png) | Proof of Thm.&nbsp;41 |
 
 ## Installation of the Package
 
@@ -81,5 +81,15 @@ There is a variable `nb_columns` in `non_local_boxes/evaluate.py` that can be se
 - for evaluation codes, set it to 1.
 The bigger that number is, the more precise is the optimisation but the longer is the run time.
 
-## Credits
-Later.
+## Reference
+
+```bibtex
+@misc{botteron2024algebra,
+      title={Algebra of Nonlocal Boxes and the Collapse of Communication Complexity}, 
+      author={Pierre Botteron and Anne Broadbent and Reda Chhaibi and Ion Nechita and Clément Pellegrini},
+      year={2024},
+      eprint={2312.00725},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph}
+}
+```
