@@ -27,12 +27,14 @@ This GitHub page is associated to the following manuscript
 
 | File name | Description | Link with the manuscript |
 | :------------ |:---------------| :-----|
-| `Coordinates_extremal_NS_boxes.ipynb` | Drawing the 24 extremal boxes of $\mathcal{NS}$ in terms of $2$ games. ![24 extremal points of NS](https://github.com/Pierre-Botteron/Algebra-of-Boxes-code/tree/main/Images/24-extremal-points-of-NS.png) | Figures&nbsp;11 and&nbsp;8 |
+| `Coordinates_extremal_NS_boxes.ipynb` | Drawing the 24 extremal boxes of $\mathcal{NS}$ in terms of $2$ games. ![24 extremal points of NS](tree/main/Images/24-extremal-points-of-NS.png) | Figures&nbsp;11 and&nbsp;8 |
 | `Draw-new-collapsing-boxes.ipynb` | Drawing new collapsing boxes using Algorithm&nbsp;4. ![Collapsing area from Algo 4](https://github.com/Pierre-Botteron/Algebra-of-Boxes-code/tree/main/Images/Collapsing-area-from-Algo-4.png) | Figure&nbsp;10 |
 | `Draw-Orbit.ipynb` | Drawing the Orbit of a box $\mathtt{P}$ in some slices. ![Orbit BS09](https://github.com/Pierre-Botteron/Algebra-of-Boxes-code/tree/main/Images/Orbit-BS09.png) | Figures&nbsp;7 and&nbsp;8, Appendix&nbsp;A |
 | `Histograms.ipynb` | Drawing the histograms of the ouputs of Algorithms&nbsp;2 and&nbsp;3. ![Histogram](https://github.com/Pierre-Botteron/Algebra-of-Boxes-code/tree/main/Images/Histogram.png) | Figure&nbsp;9 |
 | `Multiplication-Table.ipynb` | Computing the multiplication table given some boxes and a wiring. ![Multiplication table](https://github.com/Pierre-Botteron/Algebra-of-Boxes-code/tree/main/Images/Multiplication-table.png) | Figure&nbsp;4, Eq.&nbsp;(18), Appendix&nbsp;C |
 | `Test_if_W_is_collapsing.ipynb` | Given a wiring $\mathsf{W}$ and a triangle of boxes, test if the wiring collapses the triangle. ![Test if a wiring is collapsing](https://github.com/Pierre-Botteron/Algebra-of-Boxes-code/tree/main/Images/Test-if-a-wiring-is-collapsing.png) | Proof of Thm.&nbsp;41 |
+
+![24 extremal points of NS](https://github.com/Pierre-Botteron/Algebra-of-Boxes-code/tree/main/Images/24-extremal-points-of-NS.png)
 
 ## Installation of the Package
 
