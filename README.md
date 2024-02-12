@@ -34,8 +34,6 @@ This GitHub page is associated to the following manuscript
 | `Multiplication-Table.ipynb` | Computing the multiplication table given some boxes and a wiring. ![Multiplication table](https://github.com/Pierre-Botteron/Algebra-of-Boxes-code/blob/main/Images/Multiplication-table.png) | Figure&nbsp;4, Eq.&nbsp;(18), Appendix&nbsp;C |
 | `Test_if_W_is_collapsing.ipynb` | Given a wiring $\mathsf{W}$ and a triangle of boxes, test if the wiring collapses the triangle. ![Test if a wiring is collapsing](https://github.com/Pierre-Botteron/Algebra-of-Boxes-code/blob/main/Images/Test-if-a-wiring-is-collapsing.png) | Proof of Thm.&nbsp;41 |
 
-![24 extremal points of NS](https://github.com/Pierre-Botteron/Algebra-of-Boxes-code/blob/main/Images/24-extremal-points-of-NS.png)
-
 ## Installation of the Package
 
 1. Create new virtual environment `.venv_boxes`:
