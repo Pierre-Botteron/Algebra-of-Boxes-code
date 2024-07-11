@@ -84,12 +84,16 @@ The bigger that number is, the more precise is the optimisation but the longer i
 ## Reference
 
 ```bibtex
-@misc{botteron2024algebra,
-      title={Algebra of Nonlocal Boxes and the Collapse of Communication Complexity}, 
-      author={Pierre Botteron and Anne Broadbent and Reda Chhaibi and Ion Nechita and Clément Pellegrini},
-      year={2024},
-      eprint={2312.00725},
-      archivePrefix={arXiv},
-      primaryClass={quant-ph}
+@article{Botteron2024algebraofnonlocal,
+  doi = {10.22331/q-2024-07-10-1402},
+  url = {https://doi.org/10.22331/q-2024-07-10-1402},
+  title = {Algebra of {N}onlocal {B}oxes and the {C}ollapse of {C}ommunication {C}omplexity},
+  author = {Botteron, Pierre and Broadbent, Anne and Chhaibi, Reda and Nechita, Ion and Pellegrini, Cl{\'{e}}ment},
+  journal = {{Quantum}},
+  issn = {2521-327X},
+  volume = {8},
+  pages = {1402},
+  month = jul,
+  year = {2024}
 }
 ```
